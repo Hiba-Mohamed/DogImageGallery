@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* body styling */
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* Header styling */
+
+.header{
+  background-color: rgb(69, 146, 146);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header h4{
+  padding-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer styling */
+.footer{
+  background-color: rgb(69, 146, 146);
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  
+}
