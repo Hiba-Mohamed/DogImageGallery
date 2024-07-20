@@ -2,7 +2,6 @@ import "./index.css";
 import Header from "./components/Header";
 import BreedSelector from "./components/BreedSelector";
 import ImageGallery from "./components/ImageGallery";
-import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -61,7 +60,6 @@ function App() {
           <ImageGallery imagesArray={imageList} numberOfImages={imageNumber} />
         )}
       </div>
-      <Footer />
     </>
   );
 }
