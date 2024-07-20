@@ -85,6 +85,11 @@ button{
   padding: 50px;
 }
 
+.lengthAlertP{
+  text-align: center;
+  color: brown;
+}
+
 .imagesDiv{
   display: flex;
   flex-direction: row;
