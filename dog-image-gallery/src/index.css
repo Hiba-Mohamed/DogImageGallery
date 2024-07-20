@@ -5,18 +5,14 @@
 
 /* body styling */
 body {
-
 }
 
-
-
 /* app container */
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 /* Header styling */
 
@@ -45,10 +41,10 @@ form {
 }
 
 form div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 label {
@@ -64,10 +60,9 @@ input {
 select {
   padding: 5px;
   width: 215px;
-
 }
 
-button{
+button {
   display: inline-block;
   background-color: #000000;
   color: white;
@@ -80,19 +75,18 @@ button{
   font-family: inherit;
 }
 
-
 /* gallery styling */
-.galleryTitle{
+.galleryTitle {
   text-align: center;
   padding: 50px;
 }
 
-.lengthAlertP{
+.lengthAlertP {
   text-align: center;
   color: brown;
 }
 
-.imagesDiv{
+.imagesDiv {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -101,16 +95,23 @@ button{
   gap: 20px;
   padding-top: 50px;
   padding-bottom: 100px;
-  
 }
 
-.imagesDiv img{
+.imagesDiv img {
   width: 200px;
   height: 200px;
   padding: 10px;
   background-color: white;
   box-shadow: 10px 5px 20px 10px rgba(40, 43, 20, 0.123);
   border-radius: 15px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.imagesDiv img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer styling */
