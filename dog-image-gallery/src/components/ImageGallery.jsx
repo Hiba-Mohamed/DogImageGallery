@@ -1,9 +1,8 @@
 import React from 'react'
 
-const ImageGallery = () => {
-  return (
-    <div>ImageGallery</div>
-  )
-}
+const ImageGallery = ({ imagesArray }) => {
+    console.log(imagesArray)
+  return <div>ImageGallery</div>;
+};
 
 export default ImageGallery

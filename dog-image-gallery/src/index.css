@@ -1,47 +1,79 @@
 * {
   margin: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* body styling */
-body{
+body {
   display: flex;
   flex-direction: column;
 }
 
-
-
-
 /* Header styling */
 
-.header{
+.header {
   background-color: rgb(69, 146, 146);
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.header h4{
+.header h4 {
   padding-left: 30px;
 }
 
+/* BreedSelector styling */
 
+form {
+  box-shadow: 10px 5px 20px 10px rgba(40, 43, 44, 0.123);
+  margin: 20px;
+  padding: 30px 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
+form div {
+  display: flex;
+  flex-direction: row;
+}
 
+label {
+  width: 200px;
+  font-weight: bold;
+}
 
+input {
+  padding: 5px;
+  width: 200px;
+}
 
+select {
+  padding: 5px;
+  width: 215px;
 
+}
 
-
-
+button{
+  display: inline-block;
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
 
 /* Footer styling */
-.footer{
+.footer {
   background-color: rgb(69, 146, 146);
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  
 }
