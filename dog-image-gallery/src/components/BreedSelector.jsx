@@ -15,6 +15,8 @@ const BreedSelector = ({ breedListArray, passInfo }) => {
       return;
     } else {
       passInfo(breedName, imageNumber);
+           setImageNumber("");
+           setBreedName("");
     }
   };
 
@@ -24,6 +26,7 @@ const BreedSelector = ({ breedListArray, passInfo }) => {
         <label>Dog Breed</label>
         <select
           class="dog-selector"
+          value={breedName}
           onChange={(e) => setBreedName(e.target.value)}
           required
         >
@@ -41,6 +44,7 @@ const BreedSelector = ({ breedListArray, passInfo }) => {
         <label htmlFor="">Number of images</label>
         <input
           type="number"
+          value={imageNumber}
           onChange={(e) => setImageNumber(e.target.value)}
           min={1}
           placeholder="Choose number of images"
