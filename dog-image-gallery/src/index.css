@@ -45,8 +45,10 @@ form {
 }
 
 form div {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 label {
@@ -95,7 +97,7 @@ button{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 900px;
+  /* width: 900px; */
   gap: 20px;
   padding-top: 50px;
   padding-bottom: 100px;
