@@ -32,36 +32,35 @@ function App() {
 
   const fetchBreedImages = async (breedName, imageNumber) => {
     const res = await fetch(`https://dog.ceo/api/breed/${breedName}/images`);
-    console.log(res)
+    console.log(res);
     const data = await res.json();
     console.log(data);
-    const imagesListFetched = data.message
-    console.log(imagesListFetched)
+    const imagesListFetched = data.message;
+    console.log(imagesListFetched);
     setImageList(imagesListFetched);
-    console.log(imageList)
-
+    console.log(imageList);
   };
-      console.log(imageList);
-
+  console.log(imageList);
 
   const passBreedInfoOver = (name, number) => {
     setBreedName(name);
     setImageNumber(number);
-    fetchBreedImages(name, number)
+    fetchBreedImages(name, number);
   };
   console.log(breedName, imageNumber);
 
   return (
     <>
       <Header />
-      <BreedSelector
-        breedListArray={breedListArray}
-        passInfo={passBreedInfoOver}
-      />
-      {imageList && (
-        <ImageGallery imagesArray={imageList} />
-      )}
-
+      <div className="container">
+        <BreedSelector
+          breedListArray={breedListArray}
+          passInfo={passBreedInfoOver}
+        />
+        {imageList && (
+          <ImageGallery imagesArray={imageList} numberOfImages={imageNumber} />
+        )}
+      </div>
       <Footer />
     </>
   );

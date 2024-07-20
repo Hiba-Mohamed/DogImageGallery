@@ -5,9 +5,18 @@
 
 /* body styling */
 body {
+
+}
+
+
+
+/* app container */
+.container{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
 
 /* Header styling */
 
@@ -67,6 +76,34 @@ button{
   text-decoration: none;
   font-size: 15px;
   font-family: inherit;
+}
+
+
+/* gallery styling */
+.galleryTitle{
+  text-align: center;
+  padding: 50px;
+}
+
+.imagesDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 900px;
+  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  
+}
+
+.imagesDiv img{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 10px 5px 20px 10px rgba(40, 43, 20, 0.123);
+  border-radius: 15px;
 }
 
 /* Footer styling */
