@@ -21,11 +21,11 @@ const BreedSelector = ({ breedListArray, passInfo }) => {
   };
 
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <div>
         <label>Dog Breed</label>
         <select
-          class="dog-selector"
+          className="dog-selector"
           value={breedName}
           onChange={(e) => setBreedName(e.target.value)}
           required
@@ -49,11 +49,10 @@ const BreedSelector = ({ breedListArray, passInfo }) => {
           min={1}
           max={100}
           placeholder="Choose number of images"
+          required
         />
       </div>
-      <button onClick={onSubmit} required>
-        Submit
-      </button>
+      <button type="submit">Submit</button>
     </form>
   );
 };
