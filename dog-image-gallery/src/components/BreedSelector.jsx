@@ -15,8 +15,8 @@ const BreedSelector = ({ breedListArray, passInfo }) => {
       return;
     } else {
       passInfo(breedName, imageNumber);
-           setImageNumber("");
-           setBreedName("");
+      setImageNumber("");
+      setBreedName("");
     }
   };
 
@@ -47,6 +47,7 @@ const BreedSelector = ({ breedListArray, passInfo }) => {
           value={imageNumber}
           onChange={(e) => setImageNumber(e.target.value)}
           min={1}
+          max={100}
           placeholder="Choose number of images"
         />
       </div>
